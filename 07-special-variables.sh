@@ -88,3 +88,5 @@ echo "Process ID of last background command: $!"
 # [ ec2-user@ip-172-31-27-208 ~ ]$ ps -ef |grep sleep
 # ec2-user    1931       1  0 19:49 pts/0    00:00:00 sleep 60
 # ec2-user    1939    1880  0 19:49 pts/1    00:00:00 grep --color=auto sleep
+
+echo "Exit status of previous command: $? "
