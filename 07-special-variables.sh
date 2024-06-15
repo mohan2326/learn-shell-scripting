@@ -2,7 +2,7 @@
 
 echo "All variables: $@" #Print all variables
 
-Output:
+#Output:
 # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 07-special-variables.sh devops aws
 # All variables: devops aws
 
