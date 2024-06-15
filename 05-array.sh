@@ -10,7 +10,7 @@ TECHNOLOGIES=("AWS" "AZURE" "GCP") #list of values
 echo "First technology is: ${TECHNOLOGIES[0]}"
 echo "Secont technology is: ${TECHNOLOGIES[1]}"
 echo "Third technology is: ${TECHNOLOGIES[2]}"
-echo "All technology is: ${TECHNOLOGIES[@]}" #here @ is everything which will print all
+echo "All technologies is: ${TECHNOLOGIES[@]}" #here @ is everything which will print all
 
 
 # Data types
