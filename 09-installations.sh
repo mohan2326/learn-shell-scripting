@@ -3,8 +3,8 @@
 #dnf install mysql -y
 
 # output:
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
-# Error: This command has to be run with superuser privileges (under the root user on most systems).
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
+    # Error: This command has to be run with superuser privileges (under the root user on most systems).
 
 # installation
 # ---------------
@@ -14,14 +14,11 @@
 # if not super user, I should throw proper error
 
 # How you run a command inside shell script and take the output 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ id
 #     uid=1001(ec2-user) gid=1001(ec2-user) groups=1001(ec2-user)
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo su
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ root@ip-172-31-27-208 /home/ec2-user/learn-shell-scripting ]# id
 #     uid=0(root) gid=0(root) groups=0(root)
 
@@ -31,11 +28,9 @@
 #     [ root@ip-172-31-27-208 /home/ec2-user/learn-shell-scripting ]# id -u
 #     0
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ root@ip-172-31-27-208 /home/ec2-user/learn-shell-scripting ]# exit
 #     exit
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ id -u
 #     1001
 
@@ -72,9 +67,9 @@ fi
 echo "is the script proceeding??"
 
 # output:
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
-# Please run this script with root access.
-# Error: This command has to be run with superuser privileges (under the root user on most systems).
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
+    # Please run this script with root access.
+    # Error: This command has to be run with superuser privileges (under the root user on most systems).
 
 #if error comes, can we proceed? NO
 
@@ -96,11 +91,11 @@ echo "is the script proceeding??"
     # Please run this script with root access.
 
 # output:
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 09-installations.sh
-# You are super user.
-# Red Hat Enterprise Linux 9 for x86_64 - AppStream from RHUI (RPMs) 
-# Complete!
-# Installation of mysql...SUCCESS
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 09-installations.sh
+    # You are super user.
+    # Red Hat Enterprise Linux 9 for x86_64 - AppStream from RHUI (RPMs) 
+    # Complete!
+    # Installation of mysql...SUCCESS
 
 # output:
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 09-installations.sh
