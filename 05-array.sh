@@ -13,11 +13,11 @@ echo "Third technology is: ${TECHNOLOGIES[2]}"
 echo "All technologies is: ${TECHNOLOGIES[@]}" #here @ is everything which will print all
 
 # Output:
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 05-array.sh
-# First technology is: AWS
-# Secont technology is: AZURE
-# Third technology is: GCP
-# All technologies is: AWS AZURE GCP
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 05-array.sh
+    # First technology is: AWS
+    # Secont technology is: AZURE
+    # Third technology is: GCP
+    # All technologies is: AWS AZURE GCP
 
 # Data types
 # ------------------
