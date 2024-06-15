@@ -37,8 +37,16 @@ echo "Home directory of current user: $HOME"
 # Home directory of current user: /home/ec2-user
 
 echo "Which user is running this script: $USER"
+# output:
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 07-special-variables.sh devops aws
+# All variables: devops aws
+# Number of variables passed: 2
+# Script Name: 07-special-variables.sh
+# Current working directory: /home/ec2-user/learn-shell-scripting
+# Home directory of current user: /home/ec2-user
+# Which user is running this script: ec2-user
 
-# echo "Hostname: $HOSTNAME"
+echo "Hostname: $HOSTNAME"
 # echo "Process ID of the current shell script: $$"
 # sleep 60 &
 # echo "Process ID of last background command: $!"
