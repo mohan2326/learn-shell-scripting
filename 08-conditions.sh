@@ -13,6 +13,13 @@ fi
 
 #https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts
 
+# Output:
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 08-conditions.sh 8
+# Given number 8 is less than 10
+
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 08-conditions.sh 15
+# Given number 15 is greater than 10
+
 #These are used as confitions:
 # if {
 
