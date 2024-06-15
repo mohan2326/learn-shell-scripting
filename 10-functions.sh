@@ -52,14 +52,14 @@
 #     Dependencies resolved.
 #     Nothing to do.
 #     Complete!
-#     Exit status: 0
+#     Exit status: 0 (#Based on this will write the success and failure)
 #     What are you doing: Installing MySQL
 #     Last metadata expiration check: 0:21:04 ago on Sat Jun 15 20:24:05 2024.
 #     Package git-2.43.0-1.el9.x86_64 is already installed.
 #     Dependencies resolved.
 #     Nothing to do.
 #     Complete!
-#     Exit status: 0
+#     Exit status: 0 (#Based on this will write the success and failure)
 #     What are you doing: Installing GIT
 
 USERID=$(id -u)
@@ -87,3 +87,19 @@ VALIDATE $? "Installing MySQL"
 
 dnf install git -y
 VALIDATE $? "Installing GIT"
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 10-functions.sh
+#     You are super user.
+#     Last metadata expiration check: 0:25:21 ago on Sat Jun 15 20:24:05 2024.
+#     Package mysql-8.0.36-1.el9_3.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
+#     Installing MySQL...SUCCESS
+#     Last metadata expiration check: 0:25:22 ago on Sat Jun 15 20:24:05 2024.
+#     Package git-2.43.0-1.el9.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
+#     Installing GIT...SUCCESS
