@@ -39,8 +39,21 @@
 
 #Lets assume converstion between to people using the variabled
 
-PERSON1=Linux #no space between = and value
-PERSON2=SRE
+# PERSON1=Linux #no space between = and value
+# PERSON2=SRE
+
+# echo "$PERSON1:: Hello $PERSON2, How are you?"
+# echo "$PERSON2:: Hi $PERSON1, I am fine. How are you?"
+# echo "$PERSON1: I am fine too. how is your work?"
+# echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
+
+# The output will be same with variables 
+
+# Now lets assume to change the variables like PERSON1=TOM and PERSON2:JERRY
+# In this case i will just update the variables
+
+PERSON1=TOM #no space between = and value
+PERSON2=JERRY
 
 echo "$PERSON1:: Hello $PERSON2, How are you?"
 echo "$PERSON2:: Hi $PERSON1, I am fine. How are you?"
