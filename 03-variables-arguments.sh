@@ -18,3 +18,14 @@ echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
 # ninjastorm:: not bad. I am thinking to upgrade to DevOps
 
 #we can pass the arguments outside the script like above and passing in variable
+
+# arguments/parameters
+# --------------------
+# sh variables.sh power ninja
+
+# power = 1st variable
+# ninja = 2nd variable
+# .
+# .
+# .
+# Some X = nth variable
