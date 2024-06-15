@@ -35,7 +35,6 @@
 
 # variables hold some values,
 
-# 4. if you change variable value, it will be automaticaly reflected everywhere it is referred
 
 #Lets assume converstion between to people using the variabled
 
@@ -59,3 +58,12 @@ echo "$PERSON1:: Hello $PERSON2, How are you?"
 echo "$PERSON2:: Hi $PERSON1, I am fine. How are you?"
 echo "$PERSON1: I am fine too. how is your work?"
 echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
+
+# Output had updated to our varibales:
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 02-variables.sh
+# TOM:: Hello JERRY, How are you?
+# JERRY:: Hi TOM, I am fine. How are you?
+# TOM: I am fine too. how is your work?
+# JERRY:: not bad. I am thinking to upgrade to DevOps
+
+#variable are central location to keep the values --> if you change variable value, it will be automaticaly reflected everywhere it is referred
