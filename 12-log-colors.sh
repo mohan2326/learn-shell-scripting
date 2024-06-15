@@ -69,5 +69,25 @@ VALIDATE $? "Installing MySQL"
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing Git"
 
-dnf install dockerr -y &>>$LOGFILE
-VALIDATE $? "Installing Docker"
+dnf install dockerr -y &>>$LOGFILE #This we are giving to see the red color
+VALIDATE $? "Installing Docker" 
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 12-log-colors.sh
+#     Script started executing at: 2024-06-15-21-43-24
+#     You are super user.
+#     Installing MySQL... SUCCESS 
+#     Installing Git... SUCCESS 
+#     Installing Docker... FAILURE 
+#     Installed:
+#     mariadb-connector-c-config-3.2.6-1.el9_0.noarch  mysql-8.0.36-1.el9_3.x86_64 
+#     mysql-common-8.0.36-1.el9_3.x86_64              
+#     Complete!
+#     Last metadata expiration check: 1:19:23 ago on Sat Jun 15 20:24:05 2024.
+#     Package git-2.43.0-1.el9.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
+#     Last metadata expiration check: 1:19:24 ago on Sat Jun 15 20:24:05 2024.
+#     No match for argument: dockerr
+#     Error: Unable to find a match: dockerr
