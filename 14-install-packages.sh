@@ -54,4 +54,13 @@ fi
 for i in $@
 do 
     echo "packages to install: $i"
+    dnf list installed $i
 done
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 14-install-packages.sh mysql gcc chrony fail2ban
+#     You are super user.
+#     packages to install: mysql
+#     packages to install: gcc
+#     packages to install: chrony
+#     packages to install: fail2ban
