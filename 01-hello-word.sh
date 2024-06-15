@@ -17,3 +17,4 @@ echo "This is my 1st message using shell script"
 # bash <script>
 # ./<script-name> --> this should have execute permission
 # X --> running the command/script
+# giving execute permission -> chmod +x <scipt-name> --> then in terminal run ./<script-name> 
