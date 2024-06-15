@@ -12,5 +12,5 @@ echo "Total of $NO1 and $NO2 is: $SUM"
 #https://www.tutorialspoint.com/unix/unix-basic-operators.htm
 
 # Output:
-# sh 06-data-types.sh 110 50
-# Total of 110 and 50 is: 160
+    # sh 06-data-types.sh 110 50
+    # Total of 110 and 50 is: 160
