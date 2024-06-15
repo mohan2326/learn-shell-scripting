@@ -11,11 +11,11 @@ echo "$PERSON1: I am fine too. how is your work?"
 echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
 
 # Output:
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 03-variables-arguments.sh powerranger ninjastorm
-# powerranger:: Hello ninjastorm, How are you?
-# ninjastorm:: Hi powerranger, I am fine. How are you?
-# powerranger: I am fine too. how is your work?
-# ninjastorm:: not bad. I am thinking to upgrade to DevOps
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 03-variables-arguments.sh powerranger ninjastorm
+    # powerranger:: Hello ninjastorm, How are you?
+    # ninjastorm:: Hi powerranger, I am fine. How are you?
+    # powerranger: I am fine too. how is your work?
+    # ninjastorm:: not bad. I am thinking to upgrade to DevOps
 
 #we can pass the arguments outside the script like above and passing in variable
 
