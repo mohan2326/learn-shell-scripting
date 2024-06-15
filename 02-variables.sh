@@ -51,9 +51,11 @@
 # Now lets assume to change the variables like PERSON1=TOM and PERSON2:JERRY
 # In this case i will just update the variables
 
+#declaring the variables
 PERSON1=TOM #no space between = and value
 PERSON2=JERRY
 
+#referring variable
 echo "$PERSON1:: Hello $PERSON2, How are you?"
 echo "$PERSON2:: Hi $PERSON1, I am fine. How are you?"
 echo "$PERSON1: I am fine too. how is your work?"
