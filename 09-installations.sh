@@ -59,6 +59,16 @@ else
     echo "Installation of mysql...SUCCESS"
 fi
 
+dnf install git -y
+
+if [ $? -ne 0 ]
+then
+    echo "Installation of git...FAILURE"
+    exit 1
+else
+    echo "Installation of Git...SUCCESS"
+fi
+
 echo "is the script proceeding??"
 
 # output:
@@ -84,3 +94,10 @@ echo "is the script proceeding??"
 
     # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
     # Please run this script with root access.
+
+# output:
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 09-installations.sh
+# You are super user.
+# Red Hat Enterprise Linux 9 for x86_64 - AppStream from RHUI (RPMs) 
+# Complete!
+# Installation of mysql...SUCCESS
