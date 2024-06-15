@@ -101,3 +101,22 @@ echo "is the script proceeding??"
 # Red Hat Enterprise Linux 9 for x86_64 - AppStream from RHUI (RPMs) 
 # Complete!
 # Installation of mysql...SUCCESS
+
+# output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 09-installations.sh
+#     You are super user.
+#     Last metadata expiration check: 0:01:41 ago on Sat Jun 15 20:24:05 2024.
+#     Package mysql-8.0.36-1.el9_3.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
+#     Installation of mysql...SUCCESS
+#     Last metadata expiration check: 0:01:42 ago on Sat Jun 15 20:24:05 2024.
+#     Package git-2.43.0-1.el9.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
+#     Installation of Git...SUCCESS
+#     is the script proceeding??
+
+# In code we have to avoid using duplicates
