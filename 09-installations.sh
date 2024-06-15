@@ -51,6 +51,14 @@ fi
 
 dnf install mysql -y
 
+if [ $? -ne 0 ]
+then
+    echo "Installation of mysql...FAILURE"
+    exit 1
+else
+    echo "Installation of mysql...SUCCESS"
+fi
+
 echo "is the script proceeding??"
 
 # output:
@@ -71,3 +79,8 @@ echo "is the script proceeding??"
     # 0 --> success
     # other than 0 --> failure
     # 1-127
+
+#After putting the exit command the script had existed
+
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
+    # Please run this script with root access.
