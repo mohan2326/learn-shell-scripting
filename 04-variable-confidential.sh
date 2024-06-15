@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo "Please enter username::"
+# echo "Please enter username::"
 
-read USERNAME #here USERNAME IS variable
+# read USERNAME #here USERNAME IS variable
 
-echo "Please enter password::"
+# echo "Please enter password::"
 
-read PASSWORD
+# read PASSWORD
 
-echo "Username is: $USERNAME, Password is: $PASSWORD"
+# echo "Username is: $USERNAME, Password is: $PASSWORD"
 
 # Output:
 # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 04-variable-confidential.sh
