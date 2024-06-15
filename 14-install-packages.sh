@@ -86,10 +86,10 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
-R="\e[31m"
-G="\e[32m"
-Y="\e[33m"
-N="\e[0m"
+R="\e[31m" #R = Red
+G="\e[32m" #G = Green
+Y="\e[33m" #Y = Yellow
+N="\e[0m"  #N = Normal
 
 VALIDATE(){
    if [ $1 -ne 0 ]
@@ -121,3 +121,24 @@ do
         VALIDATE $? "Installation of $i"
     fi
 done
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 14-install-packages.sh mysql gcc chrony fail2ban
+#     You are super user.
+#     package to install: mysql
+#     Installation of mysql... SUCCESS 
+#     package to install: gcc
+#     Installation of gcc... SUCCESS 
+#     package to install: chrony
+#     Installation of chrony... SUCCESS 
+#     package to install: fail2ban
+#     fail2ban already installed... SKIPPING 
+#     [ ec2-user@ip-172-31-27-208 /tmp ]$ ls -lrt #checking the log files
+#     total 32
+#     drwx------ 3 root root   60 Jun 15 18:46 systemd-private-abe2ab3f02a841e6998281dbd925de10-dbus-broker.service-YyZHle
+#     drwx------ 3 root root   60 Jun 15 18:46 systemd-private-abe2ab3f02a841e6998281dbd925de10-systemd-logind.service-tDfGao
+#     -rw-r--r-- 1 root root  354 Jun 15 21:22 11-logs-2024-06-15-21-22-05.log
+#     -rw-r--r-- 1 root root 2504 Jun 15 21:43 12-log-colors-2024-06-15-21-43-24.log
+#     -rw-r--r-- 1 root root  497 Jun 15 21:45 12-log-colors-2024-06-15-21-45-22.log
+#     -rw-r--r-- 1 root root 4987 Jun 15 22:11 14-install-packages-2024-06-15-22-11-35.log
+#     -rw-r--r-- 1 root root 9515 Jun 15 22:12 14-install-packages-2024-06-15-22-12-27.log
