@@ -44,9 +44,30 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
     echo "Please run this script with root access."
-    #exit 1 # manually exit if error comes.
+    exit 1 # manually exit if error comes.
 else
     echo "You are super user."
 fi
 
 dnf install mysql -y
+
+echo "is the script proceeding??"
+
+# output:
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 09-installations.sh
+# Please run this script with root access.
+# Error: This command has to be run with superuser privileges (under the root user on most systems).
+
+#if error comes, can we proceed? NO
+
+# disadvantage of shell script
+# ------------------------
+# shell script will not stop even it faces the error, it is user responsibility to check the previous command is success/ or not
+
+# exit status
+# ------------
+# what is exit status?
+    # $? --> to check the exit status of previous command
+    # 0 --> success
+    # other than 0 --> failure
+    # 1-127
