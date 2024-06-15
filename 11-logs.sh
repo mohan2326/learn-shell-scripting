@@ -118,3 +118,31 @@ VALIDATE $? "Installing MySQL"
 
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing Git"
+
+# Output:
+
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 11-logs.sh 
+#     You are super user.
+#     Installing MySQL...SUCCESS
+#     Installing Git...SUCCESS
+
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ cd /tmp/
+
+#     [ ec2-user@ip-172-31-27-208 /tmp ]$ ls -lrt
+#     total 4
+#     drwx------ 3 root root  60 Jun 15 18:46 systemd-private-abe2ab3f02a841e6998281dbd925de10-dbus-broker.service-YyZHle
+#     drwx------ 3 root root  60 Jun 15 18:46 systemd-private-abe2ab3f02a841e6998281dbd925de10-chronyd.service-SiuCDM
+#     drwx------ 3 root root  60 Jun 15 18:46 systemd-private-abe2ab3f02a841e6998281dbd925de10-systemd-logind.service-tDfGao
+#     -rw-r--r-- 1 root root 354 Jun 15 21:22 11-logs-2024-06-15-21-22-05.log
+
+#     [ ec2-user@ip-172-31-27-208 /tmp ]$ cat 11-logs-2024-06-15-21-22-05.log
+#     Last metadata expiration check: 0:58:01 ago on Sat Jun 15 20:24:05 2024.
+#     Package mysql-8.0.36-1.el9_3.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
+#     Last metadata expiration check: 0:58:02 ago on Sat Jun 15 20:24:05 2024.
+#     Package git-2.43.0-1.el9.x86_64 is already installed.
+#     Dependencies resolved.
+#     Nothing to do.
+#     Complete!
