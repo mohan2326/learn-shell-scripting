@@ -30,6 +30,13 @@ read -s PASSWORD
 
 echo "Username is: $USERNAME, Password is: $PASSWORD"
 
+# Output:
+# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 04-variable-confidential.sh
+# Please enter username:: (in terminal what is value we are entering we are not seeing)
+# Please enter password:: (same as above)
+# Username is: admin, Password is: password (for tracking we are printing the output)
+
+
 # confidential information
 # -----------------------
 # We want user to enter manually before execution
