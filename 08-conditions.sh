@@ -14,19 +14,19 @@ fi
 #https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts
 
 # Output:
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 08-conditions.sh 8
-# Given number 8 is less than 10
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 08-conditions.sh 8
+    # Given number 8 is less than 10
 
-# [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 08-conditions.sh 15
-# Given number 15 is greater than 10
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 08-conditions.sh 15
+    # Given number 15 is greater than 10
 
 #These are used as confitions:
-# if {
+    # if {
 
-# }
-# else {
+    # }
+    # else {
 
-# }
+    # }
 
 # conditions
 # ---------------
@@ -47,12 +47,12 @@ fi
 # }
 
 # NUMBER=5
-# if(!NUMBER>10){
-# 	print "print given number is greater than 10"
-# }
-# else{
-# 	print "print given number is less than 10"
-# }
+    # if(!NUMBER>10){
+    # 	print "print given number is greater than 10"
+    # }
+    # else{
+    # 	print "print given number is less than 10"
+    # }
 
 # NUMBER>10=false, !=false
 # false false is true
