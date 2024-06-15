@@ -117,3 +117,23 @@ Git is a popular source code management tool. It has below features.
 * Collaboration
 
 ![alt text](image.png)
+
+Shell Script
+---------------
+1st line -->#!/bin/bash
+
+shebang is the location interpreter, commands written inside shell script is interpreted and executed by this shebang
+
+zshell
+kshell
+cshell
+fish
+
+bash shell == shell
+
+how to execute shell script
+---------------------
+sh <script>
+bash <script>
+./<script-name> --> this should have execute permission
+X --> running the command/script
