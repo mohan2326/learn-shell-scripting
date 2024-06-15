@@ -69,5 +69,5 @@ echo "Process ID of the current shell script: $$"
 # Hostname: ip-172-31-27-208.ec2.internal
 # Process ID of the current shell script: 1831 #this is the process ID created by Linux
 
-#sleep 60 & #If you want investigate which process ID on the linux
+sleep 60 & #If you want investigate which process ID on the linux
 echo "Process ID of last background command: $!"
