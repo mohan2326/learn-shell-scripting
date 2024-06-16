@@ -16,6 +16,8 @@ done <<< $DISK_USAGE
 
 echo -e "Message: $MESSAGE"
 
+#To send in mail:
+
 # Output:
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 19-disk-usag.sh
 #     / is more than 6, Current usage: 33
