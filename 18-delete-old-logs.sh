@@ -150,3 +150,39 @@ done <<< $FILES
 # 0-SUN
 
 # zip the files and move another location in linux server...
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ crontab -e
+#     crontab: installing new crontab
+
+#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ crontab -l
+#     */2 * * * * sh /home/ec2-user/learn-shell-scripting/18-delete-old-logs.sh 
+
+#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo su
+
+#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
+#     [ root@ip-172-31-27-208 /home/ec2-user/learn-shell-scripting ]# cd /var/log/
+
+#     54.163.14.75 | 172.31.27.208 | t2.micro | null
+#     [ root@ip-172-31-27-208 /var/log ]# tail -f cron
+#     Jun 16 07:21:46 ip-172-31-27-208 crontab[20471]: (ec2-user) BEGIN EDIT (ec2-user)
+#     Jun 16 07:22:01 ip-172-31-27-208 CROND[20474]: (ec2-user) CMD (sh )
+#     Jun 16 07:22:01 ip-172-31-27-208 CROND[20473]: (ec2-user) CMDEND (sh )
+#     Jun 16 07:22:18 ip-172-31-27-208 crontab[20471]: (ec2-user) REPLACE (ec2-user)
+#     Jun 16 07:22:18 ip-172-31-27-208 crontab[20471]: (ec2-user) END EDIT (ec2-user)
+#     Jun 16 07:22:24 ip-172-31-27-208 crontab[20479]: (ec2-user) BEGIN EDIT (ec2-user)
+#     Jun 16 07:22:42 ip-172-31-27-208 crontab[20479]: (ec2-user) REPLACE (ec2-user)
+#     Jun 16 07:22:42 ip-172-31-27-208 crontab[20479]: (ec2-user) END EDIT (ec2-user)
+#     Jun 16 07:22:47 ip-172-31-27-208 crontab[20484]: (ec2-user) LIST (ec2-user)
+#     Jun 16 07:23:01 ip-172-31-27-208 crond[1246]: (ec2-user) RELOAD (/var/spool/cron/ec2-user)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20532]: (ec2-user) CMD (sh /home/ec2-user/learn-shell-scripting/18-delete-old-logs.sh )
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (#033[32m Source directory exists #033[0m)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (Files to delete: /tmp/app-logs/frontend.log)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (/tmp/app-logs/backend.log)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (/tmp/app-logs/mysql.log)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (Deleting file: /tmp/app-logs/frontend.log)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (Deleting file: /tmp/app-logs/backend.log)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDOUT (Deleting file: /tmp/app-logs/mysql.log)
+#     Jun 16 07:24:01 ip-172-31-27-208 CROND[20531]: (ec2-user) CMDEND (sh /home/ec2-user/learn-shell-scripting/18-delete-old-logs.sh )
