@@ -14,7 +14,7 @@
 
 #https://www.cyberciti.biz/faq/check-if-a-directory-exists-in-linux-or-unix-shell/
 
-SOURCE_DIRECTORY=/tmp/app-logs1
+SOURCE_DIRECTORY=/tmp/app-logs
 
 R="\e[31m"
 G="\e[32m"
@@ -28,3 +28,11 @@ else
     echo -e "$R Please make sure $SOURCE_DIRECTORY exists $N"
     exit 1
 fi
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 18-delete-old-logs.sh 
+#     Source directory exists 
+
+# Output: (if you give folder does not exists)
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 18-delete-old-logs.sh 
+#     Please make sure /tmp/app-logs1 exists 
