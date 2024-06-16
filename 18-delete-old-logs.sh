@@ -14,7 +14,7 @@
 
 #https://www.cyberciti.biz/faq/check-if-a-directory-exists-in-linux-or-unix-shell/
 
-SOURCE_DIRECTORY=/tmp/app-logs
+SOURCE_DIRECTORY=/tmp/app-logs1
 
 R="\e[31m"
 G="\e[32m"
