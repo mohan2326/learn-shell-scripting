@@ -117,6 +117,7 @@ Git is a popular source code management tool. It has below features.
 * Collaboration
 
 ![alt text](image.png)
+![alt text](image-1.png)
 
 Shell Script
 ---------------
