@@ -8,13 +8,13 @@
 
 # some cases --> even error comes, it should move forward --> error handling
 
-# set -e
+set -e
 
-failure(){
-    echo "Failed at $1: $2"
-}
+# failure(){
+#     echo "Failed at $1: $2"
+# }
 
-trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
+# trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
 
 USERID=$(id -u) #ERR
 
