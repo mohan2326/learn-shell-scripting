@@ -4,3 +4,5 @@ COURSE="DevOps from Other Script-2"
 
 echo "Variable value from Other script: $COURSE"
 echo "Process ID of other script: $$"
+
+![alt text](image-1.png)
