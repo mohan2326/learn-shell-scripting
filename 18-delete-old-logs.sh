@@ -127,3 +127,26 @@ done <<< $FILES
 #     [ ec2-user@ip-172-31-27-208 /tmp/app-logs ]$ ls -lrt
 #     total 0
 #     -rw-r--r-- 1 ec2-user ec2-user 0 Jun  5 00:00 script01.java
+
+# logs
+# ---------
+# 1. everyday a new logfile will be created with that date.
+
+# rotate the logs
+# 2. zip them and transfer to other servers
+
+# crontab --> a scheduler for linux servers
+
+# crontab -e --> edit crontab
+
+# 5 4 * * *
+
+# 1-M
+# 2-TUE
+# 3-WED
+# 4-THU
+# 5-FRI
+# 6-SAT
+# 0-SUN
+
+# zip the files and move another location in linux server...
