@@ -64,3 +64,4 @@ echo "After calling other script, course: $COURSE"
 #     15-currest-script.sh: line 32: ./16-other-script.sh: Permission denied
 #     After calling other script, course: DevOps from Current Script-1
 
+![alt text](image-1.png)
