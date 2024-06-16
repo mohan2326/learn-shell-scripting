@@ -9,10 +9,18 @@ do
     FOLDER=$(echo $line | awk -F " " '{print $NF}')
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then
-        echo "$FOLDER is more than $DISK_THRESHOLD, Current usage: $USAGE"
-        #MESSAGE+="$FOLDER is more than $DISK_THRESHOLD, Current usage: $USAGE \n"
+        #echo "$FOLDER is more than $DISK_THRESHOLD, Current usage: $USAGE"
+        MESSAGE+="$FOLDER is more than $DISK_THRESHOLD, Current usage: $USAGE \n"
     fi
 done <<< $DISK_USAGE
+
+echo -e "Message: $MESSAGE"
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 19-disk-usag.sh
+#     / is more than 6, Current usage: 33
+#     /var is more than 6, Current usage: 17
+#     /boot is more than 6, Current usage: 53
 
 # # Output: 
 #     [ root@ip-172-31-27-208 ~ ]# df -h (Disk Usage)
