@@ -33,6 +33,19 @@ FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +10)
 
 echo "Files to delete: $FILES"
 
+while IFS=read -r line
+do
+    echo "Deleting file: $line"
+done <<< $FILES
+
+#While loop
+    # while IFS= read -r line
+    # do
+    #     statements to execute
+    # done <<< input
+
+#https://stackoverflow.com/questions/2983213/input-of-while-loop-to-come-from-output-of-command
+
 # Output:
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 18-delete-old-logs.sh 
 #     Source directory exists 
