@@ -109,3 +109,21 @@ done <<< $FILES
 #     Deleting file: /tmp/app-logs/backend.log
 #     Deleting file: /tmp/app-logs/frontend.log
 #     Deleting file: /tmp/app-logs/mysql.log
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 18-delete-old-logs.sh 
+#     Source directory exists 
+#     Files to delete: /tmp/app-logs/backend.log
+#     /tmp/app-logs/frontend.log
+#     /tmp/app-logs/mysql.log
+#     Deleting file: /tmp/app-logs/backend.log
+#     Deleting file: /tmp/app-logs/frontend.log
+#     Deleting file: /tmp/app-logs/mysql.log
+
+#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ cd /tmp/app-logs/
+
+#     54.163.14.75 | 172.31.27.208 | t2.micro | null
+#     [ ec2-user@ip-172-31-27-208 /tmp/app-logs ]$ ls -lrt
+#     total 0
+#     -rw-r--r-- 1 ec2-user ec2-user 0 Jun  5 00:00 script01.java
