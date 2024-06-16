@@ -37,7 +37,7 @@
 #     After calling other script, course: DevOps from Other Script-2
 
 # 1. changes happened in other script will be reflected in current script
-# 2. PID of2 scripts are same.
+# 2. PID of 2 scripts are same.
 
 
 COURSE="DevOps from Current Script-1"
