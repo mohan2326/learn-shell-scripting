@@ -155,14 +155,11 @@ done <<< $FILES
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ crontab -e
 #     crontab: installing new crontab
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ crontab -l
 #     */2 * * * * sh /home/ec2-user/learn-shell-scripting/18-delete-old-logs.sh 
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo su
 
-#     54.163.14.75 | 172.31.27.208 | t2.micro | https://github.com/mohan2326/learn-shell-scripting.git
 #     [ root@ip-172-31-27-208 /home/ec2-user/learn-shell-scripting ]# cd /var/log/
 
 #     54.163.14.75 | 172.31.27.208 | t2.micro | null
