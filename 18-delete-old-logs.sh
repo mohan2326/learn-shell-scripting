@@ -99,3 +99,13 @@ done <<< $FILES
 #     Files to delete: /tmp/app-logs/backend.log
 #     /tmp/app-logs/frontend.log
 #     /tmp/app-logs/mysql.log
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 18-delete-old-logs.sh 
+#     Source directory exists 
+#     Files to delete: /tmp/app-logs/backend.log
+#     /tmp/app-logs/frontend.log
+#     /tmp/app-logs/mysql.log
+#     Deleting file: /tmp/app-logs/backend.log
+#     Deleting file: /tmp/app-logs/frontend.log
+#     Deleting file: /tmp/app-logs/mysql.log
