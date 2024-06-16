@@ -24,7 +24,7 @@
 # 2. PID of2 scripts are same.
 
 
-COURSE="DevOps from Current Script"
+COURSE="DevOps from Current Script-1"
 
 echo "Before calling other script, course: $COURSE"
 echo "Process ID of current shell script: $$"
@@ -33,3 +33,9 @@ echo "Process ID of current shell script: $$"
 
 echo "After calling other script, course: $COURSE"
 #echo "Process ID of current shell script: $$"
+
+# Output:
+#     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 15-currest-script.sh 
+#     Before calling other script, course: DevOps from Current Script
+#     Process ID of current shell script: 19776
+#     After calling other script, course: DevOps from Current Script
