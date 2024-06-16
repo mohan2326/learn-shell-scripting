@@ -10,11 +10,13 @@
 
 set -e
 
-# failure(){
-#     echo "Failed at $1: $2"
-# }
+failure(){
+    echo "Failed at $1: $2"
+}
 
-# trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
+trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
+
+#https://unix.stackexchange.com/questions/462156/how-do-i-find-the-line-number-in-bash-when-an-error-occured
 
 USERID=$(id -u) #ERR
 
@@ -43,3 +45,11 @@ echo "is script proceeding?"
 #     Nothing to do.
 #     Complete!
 #     is script proceeding?
+
+#After putting set -e; shell script is automatically validating if success or err
+# Output:
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 17-set.sh 
+    # You are super user.
+    # Last metadata expiration check: 2:16:45 ago on Sun Jun 16 03:31:29 2024.
+    # No match for argument: mysfaffql
+    # Error: Unable to find a match: mysfaffql
