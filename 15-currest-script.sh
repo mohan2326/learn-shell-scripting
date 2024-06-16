@@ -29,10 +29,11 @@ COURSE="DevOps from Current Script-1"
 echo "Before calling other script, course: $COURSE"
 echo "Process ID of current shell script: $$"
 
-./16-other-script.sh
+#./16-other-script.sh #1st way of calling script
+
+source ./16-other-script.sh #2n way of calling script
 
 echo "After calling other script, course: $COURSE"
-#echo "Process ID of current shell script: $$"
 
 # Output:
 #     [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sh 15-currest-script.sh 
