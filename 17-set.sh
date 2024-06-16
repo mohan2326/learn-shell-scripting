@@ -53,3 +53,12 @@ echo "is script proceeding?"
     # Last metadata expiration check: 2:16:45 ago on Sun Jun 16 03:31:29 2024.
     # No match for argument: mysfaffql
     # Error: Unable to find a match: mysfaffql
+
+#After putting the trap in the script its validating and showing the line number
+#Output:
+    # [ ec2-user@ip-172-31-27-208 ~/learn-shell-scripting ]$ sudo sh 17-set.sh 
+    # You are super user.
+    # Last metadata expiration check: 2:21:34 ago on Sun Jun 16 03:31:29 2024.
+    # No match for argument: mysfaffql
+    # Error: Unable to find a match: mysfaffql
+    # Failed at 31: dnf install mysfaffql -y
